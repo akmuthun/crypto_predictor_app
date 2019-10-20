@@ -9,3 +9,8 @@
 <p>Clone the repository.</p>
 <p>Install dependencies on requirements.txt</p>
 <p>Use the command "python run.py"</p>
+
+
+<img src = 'https://i.imgur.com/ogU3CT8.jpg'> </img>
+<img src = 'https://i.imgur.com/fRnAZt3.jpg'> </img>
+<img src = 'https://i.imgur.com/E1dcpol.jpg'> </img>
