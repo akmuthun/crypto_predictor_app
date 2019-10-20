@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block content %}
+    
+<img src="{{ url_for('static', filename='AI.PNG') }}" alt="AI Predictor" height="350" width="731">
+
+
+<h4> 
+  <font color = "#000080"> <center><p>Do you think it is impossible to predict crypto prices?</p></center>
+  <p> We have made an AI PREDICTOR for it..Try it today for free.</p>
+  </font>
+</h4>
+<h5> We use the Neural Network(Tensorflow) technology for identifying patterns and predicting future prices. It is limited to 5-days for introduction. We are devoloping more Neural Networks for higher accuracy and planing to use other Machine Learning and Statistical models. 
+
+</h5>
+
+
+<div class="col-md-14">
+          <div class="content-section">
+            <center></center>
+            <center><h3>Our Currency Pair List</h3></center>
+            <center><p class='text-muted'>You can pick any currency pair.</center>
+              <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <p>BTC-USD</p>
+        <p>BCH-USD</p>
+        <p>XMR-USD</p>
+        <p>ZEC-USD</p>
+      </div>
+      <div class="col-sm">
+        <p>XRP-USD</p>
+        <p>XLM-USD</p>
+        <p>DASH-USD</p>
+        <p>BTG-USD</p>
+      </div>
+      <div class="col-sm">
+        <p>XRP-USD</p>
+        <p>TRX-USD</p>
+        <p>ETC-USD</p>
+        <p>MIOTA-USD</p>
+      </div>
+      <div class="col-sm">
+        <p>LTC-USD</p>
+        <p>ADA-USD</p>
+        <p>XEM-USD</p>
+        <p>BTCD-USD</p>
+      </div>
+    </div>
+</div> 
+</div>
+</div>
+{% endblock content %}

@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class = "jumbotron" style = "background-color:#000080 ">
+    <form method="GET" action="{{ url_for('posts.set') }}">
+            <center>
+              <legend class="border-bottom mb-4">
+            <font color="white">{{ legend }}</font>
+          </legend>
+            <font color="white"><b>Free Limited Access</b></font>
+            
+        <div class="form-group">
+            {{ form.submit(class="btn btn-outline-info btn-lg") }}
+
+        </div></center>
+    </form>
+</div>
+
+
+<div class = "jumbotron" style = "background-color:#000080 ">
+<font color = "white"><h3><center><p><font color = "white">Full Feature Coming Soon</font></p></center></h3>
+
+<b>Want to Help us with $5?</b>
+</font>
+<form action="{{ url_for('posts.pay') }}" method="POST">
+<script
+  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+  data-key="{{ pub_key }}"
+  data-amount="500"
+  data-name="Demo Site"
+  data-description="Widget"
+  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+  data-locale="auto">
+</script>
+</form>
+
+
+
+</div>
+
+        <div class="col-md-14">
+          <div class="content-section">
+            <center><h3>Our Currency Pair List</h3></center>
+            <center><p class='text-muted'>You can pick any currency pair.</center>
+              <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <p>BTC-USD</p>
+        <p>BCH-USD</p>
+        <p>XMR-USD</p>
+        <p>ZEC-USD</p>
+      </div>
+      <div class="col-sm">
+        <p>XRP-USD</p>
+        <p>XLM-USD</p>
+        <p>DASH-USD</p>
+        <p>BTG-USD</p>
+      </div>
+      <div class="col-sm">
+        <p>XRP-USD</p>
+        <p>TRX-USD</p>
+        <p>ETC-USD</p>
+        <p>MIOTA-USD</p>
+      </div>
+      <div class="col-sm">
+        <p>LTC-USD</p>
+        <p>ADA-USD</p>
+        <p>XEM-USD</p>
+        <p>BTCD-USD</p>
+      </div>
+    </div>
+
+
+
+
+{% endblock content %}

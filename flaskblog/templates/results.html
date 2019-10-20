@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block content %}
+
+	<div class = "jumbotron" style = "background-color:#000080 ">
+		<center>
+		<h2><font color="white">Neural Network Price Prediction of {{ stock_name }}</h2>
+		<p>This is for next five days starting from {{ starting_day }}
+		</font>
+		</center>
+	</div>
+
+
+<div class="container" align="left" style="width: 750px; margin: 0 auto;" >
+		<embed type="image/svg+xml" src={{graph_data|safe}} style='max-width:1500px'/>
+</div>
+
+
+<div class="col-md-14">
+          <div class="content-section">
+  <div class="container" style = "background-color:#000080 ">
+    <div class="row">
+      <div class="col-sm">
+        <p><font color="white">{{ prediction1 }}</p></font>
+
+      </div>
+      <div class="col-sm">
+        <p><font color="white">{{ prediction2 }}</p></font>
+      </div>
+      <div class="col-sm">
+        <p><font color="white">{{ prediction3 }}</p></font>
+      </div>
+      <div class="col-sm">
+        <p><font color="white">{{ prediction4 }}</p></font>
+      </div>
+      <div class="col-sm">
+        <p><font color="white">{{ prediction5 }}</p></font>
+      </div>
+    </div>
+</div> 
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

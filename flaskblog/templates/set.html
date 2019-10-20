@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+
+	<div class = "jumbotron" style = "background-color:#000080 ">
+		<center>
+		<h2><font color = 'white'>Please Select The Currency Pair</font></h2>
+
+<form class="form-inline" method="POST" action="{{ url_for('posts.predict') }}">
+	  <div class="form-group">
+	    <div class="input-group">
+	            <select name="namequery" class="form-control inputstl">
+	            	<option value="BTC-USD">BTC-USD</option>
+	  				<option value="ETH-USD">XRP-USD</option>
+					<option value="XRP-USD">XRP-USD</option>
+					<option value="BCH-USD">BCH-USD</option>
+					<option value="LTC-USD">LTC-USD</option>
+					<option value="XLM-USD">XLM-USD</option>
+					<option value="TRX-USD">TRX-USD</option>
+					<option value="ADA-USD">ADA-USD</option>
+					<option value="XMR-USD">XMR-USD</option>
+					<option value="DASH-USD">DASH-USD</option>
+					<option value="ETC-USD">ETC-USD</option>
+					<option value="XEM-USD">XEM-USD</option>
+					<option value="ZEC-USD">ZEC-USD</option>
+					<option value="BTG-USD">BTG-USD</option>
+					<option value="MIOTA-USD">MIOTA-USD</option>
+					<option value="BTCD-USD">BTCD-USD</option>
+	            </select>	
+	    </div>
+	    <button type="submit" class="btn btn-primary btn-lg">Go</button>
+	  </div>
+	</form>
+
+		</center>
+	</div>
+	
+        <div class="col-md-14">
+          <div class="content-section">
+            <center><h3>Our Currency Pair List</h3></center>
+            <center><p class='text-muted'>You can pick any currency pair.</center>
+              <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <p>BTC-USD</p>
+        <p>BCH-USD</p>
+        <p>XMR-USD</p>
+        <p>ZEC-USD</p>
+      </div>
+      <div class="col-sm">
+        <p>XRP-USD</p>
+        <p>XLM-USD</p>
+        <p>DASH-USD</p>
+        <p>BTG-USD</p>
+      </div>
+      <div class="col-sm">
+        <p>XRP-USD</p>
+        <p>TRX-USD</p>
+        <p>ETC-USD</p>
+        <p>MIOTA-USD</p>
+      </div>
+      <div class="col-sm">
+        <p>LTC-USD</p>
+        <p>ADA-USD</p>
+        <p>XEM-USD</p>
+        <p>BTCD-USD</p>
+      </div>
+    </div>
+
+
+
+
+<!--
+
+<div class="">
+	<form action="{{ url_for('posts.predict') }}" method="POST" >
+		<input type="text" name="namequery">
+		<button type="submit" class="btn btn-primary">
+		Predict	
+		</button>
+	</form>
+</div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
